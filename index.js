@@ -58,7 +58,7 @@ function ajouterPluie(pluie, nb){
         pluie.style.left = rdmPosition+"px";
 
         setInterval(function(){
-            if(pluie.offsetTop == window.innerHeight - 56){
+            if(pluie.offsetTop >= window.innerHeight - 56){
                 pluie.remove();
             } else {
                 pluie.style.top = (pluie.offsetTop+1)+'px';
