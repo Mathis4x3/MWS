@@ -1,8 +1,0 @@
-.m_hover:hover{
-    background-color: #8563a3 !important;
-    color: #fff !important;
-}
-.m_hover:hover .nav-link{
-    color: #ffffff !important;
-    transition: none !important;
-}

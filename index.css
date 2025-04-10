@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.halo {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none; /* Permet de cliquer à travers le halo */
+    border-radius: 25px;
+    border: 1px solid #8563a3;
+    background-color: #8563a3;
+    box-shadow: #8563a3 0px 0px 200px 170px;
+    transition: background-position 0.2s ease; /* Transition pour le déplacement du dégradé */
+}
+.nuage{
+    z-index: 1;
+}
+#nuage1{
+    top: 20px;
+    left: 50px;
+    filter: drop-shadow(30px 30px 4px rgba(0, 0, 0, 0.31));
+}
+#nuage2{
+    top: 400px;
+    left: 650px;
+    filter: drop-shadow(5px 30px 4px rgba(0, 0, 0, 0.31));
+}
+
+header{
+    background-image: url("img/accueilBG.png");
+    background-size: cover;
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 57px);
+
+    .accueil{
+        width: 100%;
+        height: calc(100vh - 57px);
+        background-color: rgba(133, 99, 163, 50%);
+    }
+    .text{
+        p {
+            color: #595049;
+        }
+        .titre {
+            font-family: "Pacifico", cursive;
+            font-size: 4.5rem;
+        }
+        .info {
+            font-size: xx-large;
+        }
+    }
+}
+
+nav {
+    .m_hover:hover{
+        background-color: #8563a3 !important;
+        color: #fff !important;
+    }
+    .m_hover:hover .nav-link{
+        color: #ffffff !important;
+        transition: none !important;
+    }
+}
+
+main {
+    .btn.m_hover:hover {
+        background-color: #b5a0c8 !important;
+        color: #000000 !important;
+        border-color: #8563a3 !important;
+    }
+
+    img{
+        height: 200px !important;
+    }
+}
+
+.m_w8ma{
+    width: 80%;
+    margin: auto;
+}
