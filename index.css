@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+body{
+    overflow-x: hidden;
+}
+
 .halo {
     z-index: -1;
     position: fixed;
@@ -16,6 +20,20 @@
 }
 .nuage{
     z-index: 1;
+}
+.soleil {
+    right: 0;
+}
+.herbe{
+    height: 50px;
+    top: calc(100vh - 57px - 50px);
+    z-index: 1;
+}
+#herbe2{
+    left: 550px;
+}
+#herbe3{
+    right: 0;
 }
 #nuage1{
     top: 20px;
