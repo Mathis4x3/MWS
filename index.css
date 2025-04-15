@@ -4,6 +4,13 @@ body{
     overflow-x: hidden;
 }
 
+.m_bg{
+    background-color: rgb(142, 13, 60) !important;
+}
+.m_separator{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .halo {
     z-index: -1;
     position: fixed;
@@ -13,37 +20,8 @@ body{
     height: 1px;
     pointer-events: none; /* Permet de cliquer à travers le halo */
     border-radius: 25px;
-    border: 1px solid #8563a3;
-    background-color: #8563a3;
-    box-shadow: #8563a3 0px 0px 200px 170px;
+    box-shadow: #1D1842 0px 0px 200px 170px;
     transition: background-position 0.2s ease; /* Transition pour le déplacement du dégradé */
-}
-.nuage{
-    z-index: 1;
-}
-.soleil {
-    right: 0;
-}
-.herbe{
-    height: 50px;
-    top: calc(100vh - 57px - 50px);
-    z-index: 1;
-}
-#herbe2{
-    left: 550px;
-}
-#herbe3{
-    right: 0;
-}
-#nuage1{
-    top: 20px;
-    left: 50px;
-    filter: drop-shadow(30px 30px 4px rgba(0, 0, 0, 0.31));
-}
-#nuage2{
-    top: 400px;
-    left: 650px;
-    filter: drop-shadow(5px 30px 4px rgba(0, 0, 0, 0.31));
 }
 
 header{
@@ -56,15 +34,19 @@ header{
     .accueil{
         width: 100%;
         height: calc(100vh - 57px);
-        background-color: rgba(133, 99, 163, 50%);
+        background-color: rgba(29, 24, 66, 0.9);
     }
     .text{
         p {
-            color: #595049;
+            color: white;
         }
         .titre {
             font-family: "Pacifico", cursive;
             font-size: 4.5rem;
+            color: rgb(142, 13, 60);
+        }
+        .nom{
+            color: rgb(253, 161, 162);
         }
         .info {
             font-size: xx-large;
@@ -74,25 +56,38 @@ header{
 
 nav {
     .m_hover:hover{
-        background-color: #8563a3 !important;
+        background-color: rgb(239, 59, 51) !important;
         color: #fff !important;
     }
     .m_hover:hover .nav-link{
+        background-color: rgba(255, 255, 255, 0) !important;
         color: #ffffff !important;
         transition: none !important;
+    }
+    .active{
+        background-color: rgb(255, 145, 141) !important;
     }
 }
 
 main {
     .btn.m_hover:hover {
-        background-color: #b5a0c8 !important;
+        background-color: rgb(255, 145, 141) !important;
         color: #000000 !important;
-        border-color: #8563a3 !important;
+        border-color: rgb(239, 59, 51) !important;
     }
 
     img{
         height: 200px !important;
+        max-width: 300px;
+        width: 75%;
     }
+    .m_w8ma{
+        background-color: rgba(243, 243, 243, 0.5) !important;
+    }
+}
+
+.card-title{
+    color: rgb(255, 145, 141) !important;
 }
 
 .m_w8ma{
