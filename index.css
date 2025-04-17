@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+*{
+    scroll-margin-top: 70px;
+}
 body{
     overflow-x: hidden;
+    background-color: #e6e6e6;
 }
-
-.m_bg{
+svg{
+    width: 7em;
+}
+.m_bgRed{
     background-color: rgb(142, 13, 60) !important;
 }
 .m_separator{
@@ -18,10 +23,15 @@ body{
     left: 0;
     width: 1px;
     height: 1px;
-    pointer-events: none; /* Permet de cliquer à travers le halo */
-    border-radius: 25px;
-    box-shadow: #1D1842 0px 0px 200px 170px;
-    transition: background-position 0.2s ease; /* Transition pour le déplacement du dégradé */
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: #1D1842 0px 0px 200px 250px;
+}
+@media (max-width: 992px) {
+    .halo{
+        top: 50% !important;
+        left: 50% !important;
+    }
 }
 
 header{
@@ -55,6 +65,7 @@ header{
 }
 
 nav {
+    min-height: 58px;
     .m_hover:hover{
         background-color: rgb(239, 59, 51) !important;
         color: #fff !important;
@@ -81,9 +92,6 @@ main {
         max-width: 300px;
         width: 75%;
     }
-    .m_w8ma{
-        background-color: rgba(243, 243, 243, 0.5) !important;
-    }
 }
 
 .card-title{
@@ -93,4 +101,7 @@ main {
 .m_w8ma{
     width: 80%;
     margin: auto;
+}
+.m_bgGrey{
+    background-color: rgba(243, 243, 243, 0.5) !important;
 }
