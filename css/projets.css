@@ -4,7 +4,31 @@
 body{
     overflow-x: hidden;
     background-color: #e6e6e6;
+    background: linear-gradient(-60deg, rgb(239, 59, 51), rgb(142, 13, 60), rgb(29, 24, 66), rgb(255, 145, 141));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+nav {
+    min-height: 58px;
+    .breadcrumb a{
+        text-decoration: none !important;
+    }
+}
+a.m_hover:hover{
+    background-color: rgb(239, 59, 51) !important;
+    color: #fff !important;
+}
+.halo {
+     z-index: -1;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 1px;
+     height: 1px;
+     border-radius: 50%;
+     pointer-events: none;
+     box-shadow: #eaeaea 0px 0px 200px 150px;
+ }
 .m_w8ma{
      width: 80%;
      margin: auto;
@@ -12,9 +36,36 @@ body{
 .m_bgGrey{
     background-color: rgba(243, 243, 243, 0.5) !important;
 }
-img{
-    max-width: 100%;
-}
 .m_para{
     text-align: justify;
+    color: black;
+    padding: 0 40px 0 40px;
+}
+.m_preuve{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+footer{
+    background-color: rgb(227, 227, 227) !important;
+     a {
+         width: fit-content !important;
+     }
+     svg {
+         width: 70px !important;
+     }
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
