@@ -97,15 +97,6 @@ main {
 .card-title{
     color: rgb(255, 145, 141) !important;
 }
-footer{
-    background-color: rgb(227, 227, 227) !important;
-    a {
-        width: fit-content !important;
-    }
-    svg {
-        width: 70px !important;
-    }
-}
 
 .m_w8ma{
     width: 80%;

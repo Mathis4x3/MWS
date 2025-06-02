@@ -1,13 +1,16 @@
 *{
     scroll-margin-top: 70px;
 }
+nav{
+    min-height: 58px;
+}
 body{
     overflow-x: hidden;
     background-color: #e6e6e6;
 }
 .m_w8ma{
-     width: 80%;
-     margin: auto;
+    width: 80%;
+    margin: auto;
 }
 .m_bgGrey{
     background-color: rgba(243, 243, 243, 0.5) !important;
