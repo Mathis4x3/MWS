@@ -5,6 +5,9 @@ body{
     overflow-x: hidden;
     background-color: #e6e6e6;
 }
+footer svg{
+    width: 3em;
+}
 .m_w8ma{
      width: 80%;
      margin: auto;

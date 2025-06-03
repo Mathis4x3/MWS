@@ -9,6 +9,9 @@ body{
 svg{
     width: 7em;
 }
+footer svg{
+    width: 3em;
+}
 .m_bgRed{
     background-color: rgb(142, 13, 60) !important;
 }
@@ -25,7 +28,7 @@ svg{
     height: 1px;
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: #1D1842 0px 0px 200px 250px;
+    box-shadow: #1D1842 0px 0px 200px 100px;
 }
 @media (max-width: 992px) {
     .halo{
@@ -104,4 +107,19 @@ main {
 }
 .m_bgGrey{
     background-color: rgba(243, 243, 243, 0.5) !important;
+}
+.bulle{
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 6px 15px -4px #000000;
+}
+.bulle h3{
+    color: black;
+    text-decoration: unset;
+}
+.bulle:hover{
+    box-shadow: none;
 }

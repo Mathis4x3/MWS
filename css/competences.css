@@ -21,3 +21,22 @@ img{
 .m_para{
     text-align: justify;
 }
+.bulle{
+    margin-top: 100px;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 6px 15px -4px #000000;
+}
+.bulle h3{
+    color: black;
+    text-decoration: unset;
+}
+.bulle:hover{
+    box-shadow: none;
+}
+footer svg{
+    width: 3em;
+}
